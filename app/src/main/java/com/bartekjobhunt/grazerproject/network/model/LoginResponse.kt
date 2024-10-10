@@ -8,7 +8,7 @@ data class LoginResponse(
     val status: Int,
     @SerialName("status_description")
     val statusDescription: String,
-    val auth: Auth)
+    val auth: Auth?)
 
 @Serializable
 data class Auth(val data: Data)
