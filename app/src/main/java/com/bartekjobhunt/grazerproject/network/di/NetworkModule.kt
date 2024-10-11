@@ -2,6 +2,8 @@ package com.bartekjobhunt.grazerproject.network.di
 
 import com.bartekjobhunt.grazerproject.network.RetrofitClient
 import com.bartekjobhunt.grazerproject.network.service.GrazerService
+import com.bartekjobhunt.grazerproject.repository.GrazerRepository
+import com.bartekjobhunt.grazerproject.repository.RetrofitGrazerRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -24,4 +26,11 @@ object NetworkModule {
     fun provideGrazerService(retrofit: Retrofit): GrazerService {
         return retrofit.create(GrazerService::class.java)
     }
+
+    @Provides
+    @Singleton
+    fun provideGrazerRepository(grazerService: GrazerService): GrazerRepository {
+        return RetrofitGrazerRepository(grazerService)
+    }
+
 }

@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class LoginResponse(
     val status: Int,
-    @SerialName("status_description")
+    @SerialName("status_desc")
     val statusDescription: String,
     val auth: Auth?)
 

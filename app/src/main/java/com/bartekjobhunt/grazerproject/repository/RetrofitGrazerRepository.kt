@@ -31,8 +31,7 @@ class RetrofitGrazerRepository @Inject constructor(private val grazerService: Gr
             /*
              * Configuring okhttp, handling and logging network exceptions is a bigger subject than we won't cover here.
              */
-            println("Exception: $exception")
-            return false
+            throw(exception)
         }
     }
 

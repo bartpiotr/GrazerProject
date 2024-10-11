@@ -9,9 +9,9 @@ import retrofit2.http.Header
 import retrofit2.http.POST
 
 interface GrazerService {
-    @POST("/auth/login")
+    @POST("/v1/auth/login")
     suspend fun login(@Body loginRequest: LoginRequest): LoginResponse
 
-    @GET("/users")
+    @GET("/v1/users")
     suspend fun getUsers(@Header("Authorization") token: String): Users
 }
