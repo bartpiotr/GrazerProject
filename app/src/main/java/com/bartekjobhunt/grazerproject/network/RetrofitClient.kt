@@ -6,7 +6,7 @@ import okhttp3.MediaType.Companion.toMediaType
 import retrofit2.Retrofit
 
 
-private const val BASE_URL = "https://grazer.nw.r.appspot.com/v1/"
+private const val BASE_URL = "https://grazer.nw.r.appspot.com"
 
 object RetrofitClient {
 
