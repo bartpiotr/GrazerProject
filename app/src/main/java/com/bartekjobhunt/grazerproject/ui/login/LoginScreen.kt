@@ -1,4 +1,4 @@
-package com.bartekjobhunt.grazerproject.login
+package com.bartekjobhunt.grazerproject.ui.login
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

@@ -1,4 +1,4 @@
-package com.bartekjobhunt.grazerproject.login
+package com.bartekjobhunt.grazerproject.ui.login
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -50,7 +50,7 @@ class LoginViewModel @Inject constructor(
             try {
                 if (repository.login(email, password)) {
                     _loginState.value = LoginState.Success
-                } else { //this is simplification
+                } else { // just for simplicity, in real app we'd have more specific handling of login response
                     _loginState.value = LoginState.Error("Invalid credentials")
                 }
             } catch (e: Exception) {
