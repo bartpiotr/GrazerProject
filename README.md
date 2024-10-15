@@ -12,6 +12,8 @@ Architecture:
 For brevity I didn't bother with the business layer. In a larger app I would also convert DAOs to business model
 and maybe further to UI model if needed. Witch clean architecture it's also important not to overdo it though. 
 I've seen apps where 80% of the code is just mapping between layers and it's just a nonsensically inflexible approach
+Also there would be the whole module or at least package for authentication. For brevity I didn't write it  
+I'm using Hilt for DI.  
 
 Modularisation: 
 In a full blown application we'd put things like network and repository layers into their own modules. 
