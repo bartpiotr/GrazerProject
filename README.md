@@ -11,7 +11,7 @@ AsyncImage I used is a bit crude.
 Architecture: 
 For brevity I didn't bother with the business layer. In a larger app I would also convert DAOs to business model
 and maybe further to UI model if needed. Witch clean architecture it's also important not to overdo it though. 
-I've seen apps where 80% of the code is just mapping between layers and it's just a nonsensical inflexible approach
+I've seen apps where 80% of the code is just mapping between layers and it's just a nonsensically inflexible approach
 
 Modularisation: 
 In a full blown application we'd put things like network and repository layers into their own modules. 
